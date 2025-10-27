@@ -10,13 +10,9 @@
 class Engine
     {
     private:  
-        
+        uint32_t flag;
     public:
-        bool changed_view;
-        /*Function to draw all the points in the z_buffer*/
-        void draw_all();
-
-        /*Builder*/
+        bool parse_flag(int ac, char **av);
         Engine();
     };
 
